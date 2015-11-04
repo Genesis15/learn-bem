@@ -13,6 +13,15 @@ modules.define('test1', ['i-bem__dom', 'events__channels'], function(provide, BE
 		 	console.log("click");
 		 	channels('app-channel').emit('loading-start');
 		 }
+	},
+	// третий параметер функци decl
+	{
+		live: function() {
+			// Здесь можно сказать, когда инициализировать
+        	// экземпляр блока
+        	this.liveInitOnEvent('click');
+        	console.log('live-init');
+		}
 	}
 ));
 	

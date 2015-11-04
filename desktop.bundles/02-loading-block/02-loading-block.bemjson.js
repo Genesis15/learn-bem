@@ -5,9 +5,9 @@ module.exports = {
     head : [
         { elem : 'meta', attrs : { name : 'description', content : '' } },
         { elem : 'meta', attrs : { name : 'viewport', content : 'width=device-width, initial-scale=1' } },
-        { elem : 'css', url : 'simple-js-block.css' }
+        { elem : 'css', url : '02-loading-block.css' }
     ],
-    scripts: [{ elem : 'js', url : 'simple-js-block.js' }],
+    scripts: [{ elem : 'js', url : '02-loading-block.js' }],
     mods : { theme : 'islands' },
     content : [
         {
@@ -17,9 +17,14 @@ module.exports = {
             ]
         },
         {
-            block: 'simple-js-block',
+            block: 'loading-block',
             js: true,
-            content: 'This is simple-js-block',
+            content: 'This is loading-block',
+        },
+	{
+            block: 'test1',
+            js: true,
+            content: 'This is clickable test1 block',
         },
         {
             block : 'footer',
