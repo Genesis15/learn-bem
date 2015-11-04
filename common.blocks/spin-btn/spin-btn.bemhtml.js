@@ -11,14 +11,18 @@ block('spin-btn')(
 						mods: {'green': true, 'round': true },
 						content: [
 							{
+								elem: 'icon',
+								content: this.ctx.icon
+							},
+							{
 								elem: 'title',
-								content: '&#128222;'	
+								content: this.ctx.text	
 							},
 							{
 								elem: 'hint',
 								mods: { 'green': true },
 								mix: { elem: 'link', mods: { 'round': true} },
-								content: 'Менеджер ответит через 30 сек.'
+								content: this.ctx.hint
 							}
 						]
 					}

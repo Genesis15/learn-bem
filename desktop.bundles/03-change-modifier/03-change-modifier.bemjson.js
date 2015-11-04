@@ -15,7 +15,10 @@ module.exports = {
             attrs: { style: 'padding: 30px' },
             content: [
                 {
-                    block: 'spin-btn'
+                    block: 'spin-btn',
+                    //icon: '&#128222;',
+                    text: 'Звони!',
+                    hint: 'Менеджер ответит через 59 сек.'
                 },
                 {
                     block: 'call-button',
