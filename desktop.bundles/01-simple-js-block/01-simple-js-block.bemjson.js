@@ -1,6 +1,6 @@
 module.exports = {
     block : 'page',
-    title : 'Title of the page',
+    title : 'A simple JavaSscript empowered BEM block',
     favicon : '/favicon.ico',
     head : [
         { elem : 'meta', attrs : { name : 'description', content : '' } },
@@ -11,21 +11,9 @@ module.exports = {
     mods : { theme : 'islands' },
     content : [
         {
-            block : 'header',
-            content : [
-                'header content goes here'
-            ]
-        },
-        {
             block: 'simple-js-block',
             js: true,
             content: 'This is simple-js-block',
-        },
-        {
-            block : 'footer',
-            content : [
-                'footer content goes here'
-            ]
         }
     ]
 };

@@ -1,0 +1,16 @@
+.animated-button_color_blue {
+    color:#345903 !important;
+    border:1px solid #96a37b !important;
+    
+    /* A fallback background color */
+    background-color: #79be1e;
+    
+    /* Specifying a version with gradients according to */
+    background-image:url('animated-button.png'), url('animated-button.png'), -moz-radial-gradient(center bottom, circle, rgba(162,211,30,1) 0,rgba(162,211,30,0) 100px),-moz-linear-gradient(#82cc27, #74b317);
+    background-image:url('animated-button.png'), url('animated-button.png'), -webkit-gradient(radial, 50% 100%, 0, 50% 100%, 100, from(rgba(162,211,30,1)), to(rgba(162,211,30,0))),-webkit-gradient(linear, 0% 0%, 0% 100%, from(#82cc27), to(#74b317));
+}
+
+.animated-button_color_blue:hover{
+    background-position:top left;
+    background-position:top left, bottom right, 0 0, 0 0;
+}
